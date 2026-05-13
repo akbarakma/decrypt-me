@@ -246,7 +246,7 @@ export function DecryptionHelper() {
                       className="h-11 rounded-md border border-white/10 bg-black/30 px-3 text-sm text-paper outline-none transition placeholder:text-white/25 focus:border-brass/60"
                       onChange={(event) => updateConfig("key", event.currentTarget.value)}
                       placeholder={config.keyMode === "raw" ? "Base64, hex, or UTF-8 key bytes" : "Password or phrase"}
-                      type={config.keyMode === "raw" ? "text" : "password"}
+                      type="password"
                       value={config.key}
                     />
                   </label>
